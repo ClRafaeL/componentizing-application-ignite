@@ -28,6 +28,7 @@ export function Home() {
 
     const selectedGenres = genres.filter(genre => genre.id == selectedGenreId ?? genre);
     setSelectedGenre(selectedGenres[0]);
+    console.log(selectedGenres[0]);
   }, [selectedGenreId]);
 
   function handleClickButton(id: number) {

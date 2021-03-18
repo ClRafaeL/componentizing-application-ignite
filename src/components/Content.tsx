@@ -16,7 +16,7 @@ export function Content(props: Props) {
   return (
     <div className="container">
       <header>
-        <span className="category">Categoria:<span> {props.selectedGenre.title}</span></span>
+        <span className="category">Categoria:<span>{props.selectedGenre?.title ?? 'Ação'}</span></span>
       </header>
 
       <main>
